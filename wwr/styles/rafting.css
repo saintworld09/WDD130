@@ -1,0 +1,136 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS variables */
+:root {
+  --primary-color: #2b4f78; /* Primary color */
+  --secondary-color: #f9f7f4; /* Secondary color */
+  --heading-font: 'Roboto', sans-serif; /* Heading font */
+  --paragraph-font: 'Roboto', sans-serif; /* Paragraph font */
+}
+
+/* General styling */
+body {
+  font-family: var(--paragraph-font);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
+header a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+main {
+  max-width: 800px; /* Limiting the width of the content */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Remove underlines from social media links */
+.sociallinks a {
+  text-decoration: none;
+}
+
+/* Additional styling for specific elements */
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--secondary-color);
+  background-color: rgba(43, 79, 120, 0.7); /* Semi-transparent background */
+  padding: 20px;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  max-width: 300px;
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
+.hero article p {
+  color: var(--primary-color);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.sociallinks {
+  text-align: center;
+}
+
+.sociallinks img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Adjust text color for readability */
+  text-align: center;
+  z-index: 1; /* Ensure heading is above background image */
+  width: 100%; /* Ensure heading spans the entire width */
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  max-width: 300px;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust background color and opacity */
+  padding: 20px;
+  color: #fff; 
+  z-index: 1; 
+}
+
+.hero article img {
+  float: right; 
+  margin-left: 10px; 
+}
