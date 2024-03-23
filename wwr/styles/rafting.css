@@ -17,9 +17,22 @@ body {
   padding: 0;
 }
 
-header, footer {
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
   background-color: var(--secondary-color);
   padding: 20px;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 header a {
@@ -43,12 +56,6 @@ p {
   margin-bottom: 20px;
 }
 
-/* Remove underlines from social media links */
-.sociallinks a {
-  text-decoration: none;
-}
-
-/* Additional styling for specific elements */
 .hero {
   position: relative;
 }
@@ -96,16 +103,47 @@ section h2 {
   margin-bottom: 10px;
 }
 
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
 footer p {
   text-align: center;
 }
 
 .sociallinks {
-  text-align: center;
+  display: flex;
+  gap: 10px;
 }
 
 .sociallinks img {
   width: 30px;
   height: 30px;
-  margin: 0 5px;
+}
+
+/* Adventure section styling */
+.adventures {
+  display: flex;
+  
+}
+
+.adventures figure {
+  margin: 0; /* Remove default margin */
+  flex: 0 0 auto; /* Allow items to shrink and grow, but not shrink below their default size */
+  margin-right: 10px; /* Add some space between images */
+}
+
+.adventures figure img {
+  width: 100px; /* Set a fixed width for images */
+  height: 150px;
+  border: 1px solid #ccc; /* Add a border for better visual separation */
+}
+
+.adventures figure figcaption {
+  text-align: center; /* Center the caption */
+  margin-top: 5px; /* Add some space above the caption */
 }
