@@ -128,7 +128,6 @@ footer p {
 /* Adventure section styling */
 .adventures {
   display: flex;
-  
 }
 
 .adventures figure {
@@ -147,3 +146,64 @@ footer p {
   text-align: center; /* Center the caption */
   margin-top: 5px; /* Add some space above the caption */
 }
+
+/* Additional styling for Contact Us page */
+
+/* Company Information section */
+#map {
+  height: 500px; /* Adjust height as needed */
+  margin-top: 20px; /* Add margin for separation */
+}
+
+/* Employee profile section */
+.employee-profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employee-profile figure {
+  text-align: center;
+  margin: 0;
+}
+
+.employee-profile img {
+  width: 150px; /* Set a fixed width for images */
+  height: 150px;
+  border-radius: 50%; /* Make images round */
+  margin-bottom: 10px; /* Add some space below images */
+}
+
+.employee-profile figcaption {
+  font-size: 14px; /* Adjust font size for captions */
+}
+
+/* Contact Form section */
+form {
+  margin-top: 20px; /* Add margin for separation */
+}
+
+form label {
+  display: block; /* Make labels block-level elements */
+  margin-bottom: 5px; /* Add some space below labels */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%; /* Make input fields full-width */
+  padding: 10px; /* Add padding for better appearance */
+  margin-bottom: 10px; /* Add some space below input fields */
+}
+
+form input[type="submit"] {
+  background-color: var(--primary-color); /* Use primary color for submit button */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Add padding */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+form input[type="submit"]:hover {
+  background-color: #1c385f; /* Darken color on hover */
+}
+
