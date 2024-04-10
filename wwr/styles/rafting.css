@@ -147,63 +147,135 @@ footer p {
   margin-top: 5px; /* Add some space above the caption */
 }
 
-/* Additional styling for Contact Us page */
-
-/* Company Information section */
-#map {
-  height: 500px; /* Adjust height as needed */
-  margin-top: 20px; /* Add margin for separation */
-}
-
-/* Employee profile section */
-.employee-profile {
-  display: flex;
-  justify-content: space-between;
-}
-
-.employee-profile figure {
+/* Trips page specific styling */
+#cta {
   text-align: center;
-  margin: 0;
+  margin-bottom: 40px;
 }
 
-.employee-profile img {
-  width: 150px; /* Set a fixed width for images */
-  height: 150px;
-  border-radius: 50%; /* Make images round */
-  margin-bottom: 10px; /* Add some space below images */
+#cta .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.employee-profile figcaption {
-  font-size: 14px; /* Adjust font size for captions */
+#trip-descriptions {
+  text-align: center; /* Center the trip descriptions */
+  margin-bottom: 40px;
 }
 
-/* Contact Form section */
-form {
-  margin-top: 20px; /* Add margin for separation */
+.trip {
+  display: inline-block; /* Display trips inline */
+  width: 30%; /* Set width to 30% to fit three trips in one row */
+  margin-bottom: 20px;
+  text-align: left; /* Align trip content to the left */
 }
 
-form label {
-  display: block; /* Make labels block-level elements */
-  margin-bottom: 5px; /* Add some space below labels */
+.trip img {
+  width: 100%;
+  height: auto;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%; /* Make input fields full-width */
-  padding: 10px; /* Add padding for better appearance */
-  margin-bottom: 10px; /* Add some space below input fields */
+#trip-table {
+  margin-top: 40px;
 }
 
-form input[type="submit"] {
-  background-color: var(--primary-color); /* Use primary color for submit button */
-  color: #fff; /* Text color */
-  padding: 10px 20px; /* Add padding */
-  border: none; /* Remove border */
-  cursor: pointer; /* Change cursor on hover */
+#trip-table table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-form input[type="submit"]:hover {
-  background-color: #1c385f; /* Darken color on hover */
+#trip-table th, #trip-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
+#trip-table th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Newsletter section styling */
+.newsletter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.newsletter h2 {
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newsletter label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #1c385f;
+}
+
+/* Call to action section styling */
+.call-to-action {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.call-to-action a {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.call-to-action a:hover {
+  background-color: #1c385f;
+}
+
+/* Content grid section styling */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item h3 {
+  margin-top: 0;
+}
+
+.grid-item p {
+  margin-bottom: 20px;
+}
